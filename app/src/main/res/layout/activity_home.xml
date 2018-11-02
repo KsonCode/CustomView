@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.lzy.customview.HomeActivity">
+
+
+    <com.example.lzy.customview.CircleView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_bright"
+        android:padding="5dp"
+        app:circle_color="@android:color/white" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="外部拦截法实现" />
+
+    <com.example.lzy.customview.HorizontalScrollViewEx
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_bright"
+            android:text="2" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_green_dark"
+            android:text="3" />
+    </com.example.lzy.customview.HorizontalScrollViewEx>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="内部拦截法实现" />
+
+    <com.example.lzy.customview.HorizontalScrollViewEx2
+        android:id="@+id/hsv2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <com.example.lzy.customview.ListViewEx
+            android:id="@+id/listView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_bright"
+            android:text="2" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_green_dark"
+            android:text="3" />
+    </com.example.lzy.customview.HorizontalScrollViewEx2>
+</LinearLayout>
